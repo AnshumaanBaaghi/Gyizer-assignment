@@ -1,0 +1,75 @@
+.form {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin: 62px 0px;
+}
+.form > div {
+  width: 32%;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-height: 176px;
+}
+
+.form input,
+.form textarea {
+  height: 32px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  background: #242320;
+  outline: none;
+  border: 1px solid #ff8303;
+  color: #f0e3caa3;
+  padding: 7px 10%;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+}
+.form > button {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  border: 2px solid #ff8303;
+  background: none;
+  color: #ff8303;
+  box-sizing: border-box;
+}
+.form > button {
+  font-size: 34px;
+}
+
+.form textarea {
+  height: 120px;
+  padding: 9px;
+  resize: none;
+}
+.form .update {
+  color: white;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+@media (max-width: 768px) {
+  .form {
+    margin: 22px;
+  }
+  .form > div {
+    width: 100%;
+    min-height: 0;
+    box-sizing: border-box;
+  }
+  .form input,
+  .form textarea {
+    padding: 7px 14px;
+  }
+  .form > button {
+    width: 70px;
+  }
+}

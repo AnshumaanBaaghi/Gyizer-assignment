@@ -1,0 +1,58 @@
+.Todos {
+  display: flex;
+  width: 90%;
+  border: 2px solid #a35709;
+  border-radius: 8px;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  min-height: 426px;
+  padding: 70px 90px;
+  box-sizing: border-box;
+  background: #242320;
+}
+
+.noTask {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 53px;
+  gap: 12px;
+}
+.noTask > :nth-child(1),
+.noTask > :nth-child(3) {
+  width: 64px;
+  border: 3px solid #ff8303;
+  border-radius: 8px;
+}
+.noTask > :nth-child(2) {
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29.05px;
+  text-align: center;
+  /* width: 100px; */
+  height: 29px;
+  gap: 0px;
+  opacity: 0px;
+  color: white;
+}
+
+.TodosList {
+  display: grid;
+  gap: 45px;
+  width: 100%;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 768px) {
+  .Todos {
+    padding: 0;
+    border: none;
+    background: none;
+  }
+  .TodosList {
+    gap: 16px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

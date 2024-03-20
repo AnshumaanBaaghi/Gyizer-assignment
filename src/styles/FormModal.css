@@ -1,0 +1,67 @@
+.formModal {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  display: flex;
+  align-items: end;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(2px);
+  box-sizing: border-box;
+}
+
+.formModalBox {
+  margin: 0px 15px;
+  padding: 18px;
+  background: #1b1a17;
+}
+
+.formModalBox form > div {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-height: 176px;
+}
+.formModalBox form input,
+.formModalBox form textarea {
+  height: 32px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  background: #242320;
+  outline: none;
+  border: 1px solid #ff8303;
+  color: #f0e3caa3;
+  padding: 7px 10%;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  padding: 9px;
+}
+
+.formModalBox form textarea {
+  height: 343px;
+  resize: none;
+}
+
+.formModalBox .formModalButtons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.formModalBox .formModalButtons > button {
+  width: 64px;
+  height: 24px;
+  color: #d9d9d9;
+  background: none;
+  border: 2px solid #ff8303;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  font-family: Roboto;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 18px;
+}
