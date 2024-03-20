@@ -3,7 +3,6 @@ import "../styles/DeleteModal.css";
 import { Context } from "../context/Provider";
 export const DeleteModal = () => {
   const { deleteTodo, setDeleteTodoId } = useContext(Context);
-  console.log("deleteTodo:", deleteTodo);
   return (
     <div className="deleteModal">
       <div>

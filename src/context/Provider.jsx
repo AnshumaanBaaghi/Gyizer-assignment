@@ -40,7 +40,6 @@ const initialVal = [
 ];
 export const ContextProvider = ({ children }) => {
   const [todos, setTodos] = useState(initialVal);
-  console.log("todos:", todos);
 
   const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth < 768);
   const [deleteTodoId, setDeleteTodoId] = useState("");
@@ -48,7 +47,6 @@ export const ContextProvider = ({ children }) => {
 
   const deleteTodo = () => {
     const updatedTodo = todos.filter((el) => el.id != deleteTodoId);
-    console.log("updatedTodo:", updatedTodo);
     setTodos(updatedTodo);
     setDeleteTodoId("");
   };

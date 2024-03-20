@@ -15,7 +15,6 @@ export const TodoList = () => {
     updateTodoData,
   } = useContext(Context);
   const handleDelete = (id) => {
-    console.log("id ah:", id);
     setDeleteTodoId(id);
   };
 

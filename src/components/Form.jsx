@@ -5,7 +5,6 @@ import { Context } from "../context/Provider";
 export const Form = () => {
   const { updateTodoData, addOrUpdateTodo, isSmallScreen } =
     useContext(Context);
-  console.log("form:", updateTodoData);
   const [formData, setFormData] = useState({
     title: updateTodoData?.title || "",
     body: updateTodoData?.body || "",
