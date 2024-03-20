@@ -5,6 +5,7 @@
   background-color: #1f1e1b;
   padding: 17px 48px;
   font-family: "Roboto";
+  opacity: 1 !important;
 }
 
 .Navbar > div > div:nth-child(1) {
